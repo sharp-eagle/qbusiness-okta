@@ -20,7 +20,7 @@
                 "qbusiness:ListAttachments",
                 "qbusiness:GetMedia"
             ],
-            "Resource": "arn:aws:qbusiness:us-east-1:000123456789:application/*"
+            "Resource": "arn:aws:qbusiness:us-east-1:000xxxxxxxxx:application/*"
         },
         {
             "Sid": "QBusinessPluginDiscoveryPermissions",
@@ -38,8 +38,8 @@
                 "qbusiness:GetRetriever"
             ],
             "Resource": [
-                "arn:aws:qbusiness:us-east-1:000123456789:application/*",
-                "arn:aws:qbusiness:us-east-1:000123456789:application/*/retriever/*"
+                "arn:aws:qbusiness:us-east-1:000xxxxxxxxx:application/*",
+                "arn:aws:qbusiness:us-east-1:000xxxxxxxxx:application/*/retriever/*"
             ]
         },
         {
@@ -64,7 +64,7 @@
                 "kms:Decrypt"
             ],
             "Resource": [
-                "arn:aws:kms:us-east-1:000123456789:key/replace_me_with_key_id"
+                "arn:aws:kms:us-east-1:000xxxxxxxxx:key/replace_me_with_key_id"
             ],
             "Condition": {
                 "StringLike": {
@@ -87,7 +87,7 @@
                 "qapps:ListLibraryItems",
                 "qapps:CreateSubscriptionToken"
             ],
-            "Resource": "arn:aws:qbusiness:us-east-1:000123456789:application/*"
+            "Resource": "arn:aws:qbusiness:us-east-1:000xxxxxxxxx:application/*"
         },
         {
             "Sid": "QAppsAppUniversalPermissions",
@@ -95,7 +95,7 @@
             "Action": [
                 "qapps:DisassociateQAppFromUser"
             ],
-            "Resource": "arn:aws:qapps:us-east-1:000123456789:application/*/qapp/*"
+            "Resource": "arn:aws:qapps:us-east-1:000xxxxxxxxx:application/*/qapp/*"
         },
         {
             "Sid": "QAppsAppOwnerPermissions",
@@ -111,7 +111,7 @@
                 "qapps:UpdateLibraryItem",
                 "qapps:StartQAppSession"
             ],
-            "Resource": "arn:aws:qapps:us-east-1:000123456789:application/*/qapp/*",
+            "Resource": "arn:aws:qapps:us-east-1:000xxxxxxxxx:application/*/qapp/*",
             "Condition": {
                 "StringEqualsIgnoreCase": {
                     "qapps:UserIsAppOwner": "true"
@@ -131,7 +131,7 @@
                 "qapps:DisassociateLibraryItemReview",
                 "qapps:StartQAppSession"
             ],
-            "Resource": "arn:aws:qapps:us-east-1:000123456789:application/*/qapp/*",
+            "Resource": "arn:aws:qapps:us-east-1:000xxxxxxxxx:application/*/qapp/*",
             "Condition": {
                 "StringEqualsIgnoreCase": {
                     "qapps:AppIsPublished": "true"
@@ -150,7 +150,7 @@
                 "qapps:UpdateQAppSessionMetadata",
                 "qapps:StopQAppSession"
             ],
-            "Resource": "arn:aws:qapps:us-east-1:000123456789:application/*/qapp/*/session/*",
+            "Resource": "arn:aws:qapps:us-east-1:000xxxxxxxxx:application/*/qapp/*/session/*",
             "Condition": {
                 "StringEqualsIgnoreCase": {
                     "qapps:UserIsSessionModerator": "true"
@@ -167,7 +167,7 @@
                 "qapps:GetQAppSessionMetadata",
                 "qapps:UpdateQAppSession"
             ],
-            "Resource": "arn:aws:qapps:us-east-1:000123456789:application/*/qapp/*/session/*",
+            "Resource": "arn:aws:qapps:us-east-1:000xxxxxxxxx:application/*/qapp/*/session/*",
             "Condition": {
                 "StringEqualsIgnoreCase": {
                     "qapps:SessionIsShared": "true"
