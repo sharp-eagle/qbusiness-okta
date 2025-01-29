@@ -9,7 +9,7 @@
 			"Action": "sts:AssumeRoleWithWebIdentity",
 			"Condition": {
 				"StringEquals": {
-					"dev-xxxxxxxx.okta.com/oauth2/default:aud": "0oamw5dvvf2PLddxs5d7"
+					"dev-xxxxxxxx.okta.com/oauth2/default:aud": "client_idxxxxxxx_from_okta"
 				}
 			}
 		},
